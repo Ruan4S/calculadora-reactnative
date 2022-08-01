@@ -3,15 +3,15 @@ import { StyleSheet, View } from "react-native";
 import { Button } from "./src/components/Button";
 import { Display } from "./src/components/Display";
 
-const initialState = {
-  displayValue: "0",
-  clearDisplay: false,
-  operation: null,
-  values: [0, 0],
-  current: 0,
-};
-
 export default function App() {
+  const initialState = {
+    displayValue: "0",
+    clearDisplay: false,
+    operation: null,
+    values: [0, 0],
+    current: 0,
+  };
+
   const [calculator, setCalculator] = useState({ ...initialState });
 
   function addDigit(n) {
